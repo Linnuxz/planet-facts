@@ -27,11 +27,11 @@ const PlanetListElement = ({ planet, onPlanetClick }: TPlanetElement) => {
             }`}
             onClick={() => onPlanetClick(planetObj)}
         >
-            <div className="flex gap-[25px]">
+            <div className="flex gap-[25px] items-center">
                 <div
                     className={`${planetObj.color} w-[20px] h-[20px] rounded-full`}
                 ></div>
-                <h2 className="text-white uppercase">{planetObj.planet}</h2>
+                <h2 className="text-white uppercase text-[17px] font-bold leading-[25px] tracking-[1.364px]">{planetObj.planet}</h2>
             </div>
             <img src={ArrowIcon} alt="icon" />
         </NavLink>
