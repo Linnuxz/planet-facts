@@ -1,6 +1,5 @@
 import { TPlanet } from '../constants';
 import SurfaceGeology from './SurfaceGeology';
-import mercurySurface from '../assets/mercurySurface.png';
 
 type TComponent = {
     planet: TPlanet;
