@@ -14,6 +14,11 @@ export type TPlanet = {
     planetSurface: string;
 };
 
+export type TPlanetSizes = {
+    planet: string;
+    size: string;
+};
+
 export const planets: TPlanet[] = [
     {
         id: 1,
@@ -139,3 +144,38 @@ export const planets: TPlanet[] = [
 
 export const buttonStyles: string =
     'text-[13px] text-["Spartan"] font-700 tracking-[1.929px] uppercase text-center pb-[12px]';
+
+export const planetSizes: TPlanetSizes[] = [
+    {
+        planet: 'mercury',
+        size: 'w-[111px] h-[111px] md:w-[184px] md:h-[184px] xl:w-[290px] xl:h-[290px]',
+    },
+    {
+        planet: 'venus',
+        size: 'w-[154px] h-[154px] md:w-[253px] md:h-[253px] xl:w-[400px] xl:h-[400px]',
+    },
+    {
+        planet: 'earth',
+        size: 'w-[173px] h-[173px] md:w-[285px] md:h-[285px] xl:w-[450px] xl:h-[450px]',
+    },
+    {
+        planet: 'mars',
+        size: 'w-[129px] h-[129px] md:w-[213px] md:h-[213px] xl:w-[336px] xl:h-[336px]',
+    },
+    {
+        planet: 'jupiter',
+        size: 'w-[224px] h-[224px] md:w-[369px] md:h-[369px] xl:w-[582px] xl:h-[582px]',
+    },
+    {
+        planet: 'saturn',
+        size: 'w-[256px] h-[256px] md:w-[350px] md:h-[350px] xl:w-[582px] xl:h-[582px]',
+    },
+    {
+        planet: 'uranus',
+        size: 'w-[176px] h-[176px] md:w-[290px] md:h-[290px] xl:w-[458px] xl:h-[458px]',
+    },
+    {
+        planet: 'neptune',
+        size: 'w-[173px] h-[173px] md:w-[285px] md:h-[285px] xl:w-[450px] xl:h-[450px]',
+    },
+];
