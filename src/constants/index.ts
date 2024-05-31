@@ -3,6 +3,7 @@ export type TPlanet = {
     planet: string;
     color: string;
     buttonColor: string;
+    buttonBgColor: string;
     fillColor: string;
     text: string;
     rotationTime: string;
@@ -25,6 +26,7 @@ export const planets: TPlanet[] = [
         planet: 'mercury',
         color: 'bg-[#DEF4FC]',
         buttonColor: 'border-[#419EBB]',
+        buttonBgColor: 'bg-[#419EBB]',
         fillColor: '#6495A7',
         text: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
         rotationTime: '58.6 days',
@@ -40,6 +42,7 @@ export const planets: TPlanet[] = [
         planet: 'venus',
         color: 'bg-[#F7CC7F]',
         buttonColor: 'border-[#EDA249]',
+        buttonBgColor: 'bg-[#EDA249]',
         fillColor: '#B3712B',
         text: "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
         rotationTime: '243 days',
@@ -55,6 +58,7 @@ export const planets: TPlanet[] = [
         planet: 'earth',
         color: 'bg-[#545BFE]',
         buttonColor: 'border-[#6D2ED5]',
+        buttonBgColor: 'bg-[#6D2ED5]',
         fillColor: '#1C21B2',
         text: "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.",
         rotationTime: '0.99 days',
@@ -70,6 +74,7 @@ export const planets: TPlanet[] = [
         planet: 'mars',
         color: 'bg-[#FF6A45]',
         buttonColor: 'border-[#D14C32]',
+        buttonBgColor: 'bg-[#D14C32]',
         fillColor: '#6F1811',
         text: 'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".',
         rotationTime: '1.03 days',
@@ -85,6 +90,7 @@ export const planets: TPlanet[] = [
         planet: 'jupiter',
         color: 'bg-[#ECAD7A]',
         buttonColor: 'border-[#D83A34]',
+        buttonBgColor: 'bg-[#D83A34]',
         fillColor: '#A15930',
         text: 'Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.',
         rotationTime: '9.93 hours',
@@ -100,6 +106,7 @@ export const planets: TPlanet[] = [
         planet: 'saturn',
         color: 'bg-[#FCCB6B]',
         buttonColor: 'border-[#CD5120]',
+        buttonBgColor: 'bg-[#CD5120]',
         fillColor: '#773C14',
         text: 'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.',
         rotationTime: '10.8 hours',
@@ -115,6 +122,7 @@ export const planets: TPlanet[] = [
         planet: 'uranus',
         color: 'bg-[#65F0D5]',
         buttonColor: 'border-[#1EC1A2]',
+        buttonBgColor: 'bg-[#1EC1A2]',
         fillColor: '#187888',
         text: 'Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.',
         rotationTime: '17.2 hours',
@@ -130,6 +138,7 @@ export const planets: TPlanet[] = [
         planet: 'neptune',
         color: 'bg-[#497EFA]',
         buttonColor: 'border-[#2D68F0]',
+        buttonBgColor: 'bg-[#2D68F0]',
         fillColor: '#0C3CA9',
         text: 'Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.',
         rotationTime: '16.08 hours',
