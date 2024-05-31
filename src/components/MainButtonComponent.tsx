@@ -14,7 +14,7 @@ const MainButtonComponent = ({ planet, onActiveClick }: TComponent) => {
     };
 
     return (
-        <div className="flex w-full justify-around mt-[20px]">
+        <div className="flex w-full justify-around mt-[20px] md:hidden">
             <button
                 className={`${buttonStyles} ${
                     activeButton === 0
