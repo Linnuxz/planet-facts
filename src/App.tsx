@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import Navbar from './pages/Navbar';
 import PlanetList from './pages/PlanetList';
@@ -26,19 +26,21 @@ const App = () => {
     };
 
     return (
-        <div className=" min-h-screen py-[16px]">
-            <Navbar onIsOpen={handleOpen} isOpen={isOpen} />
-            <div className="px-[16px] relative">
-                {isOpen && (
-                    <PlanetList
-                        onPlanetClick={() => {
-                            handlePlanetClick();
-                        }}
-                    />
-                )}
+        <div className="min-h-screen py-[16px] xl:py-0">
+            <div>
+                <Navbar onIsOpen={handleOpen} isOpen={isOpen} />
+                <div className="px-[16px] relative md:hidden">
+                    {isOpen && (
+                        <PlanetList
+                            onPlanetClick={() => {
+                                handlePlanetClick();
+                            }}
+                        />
+                    )}
+                </div>
             </div>
             <Routes>
-                <Route index />
+                <Route index element={<Navigate to="/mercury" replace />} />
                 {planets.map((planet) => (
                     <Route
                         key={planet.id}
