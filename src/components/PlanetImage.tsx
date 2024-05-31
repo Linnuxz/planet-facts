@@ -1,5 +1,7 @@
 import { TPlanet } from '../constants';
 import SurfaceGeology from './SurfaceGeology';
+import { planetSizes } from '../constants';
+import { TPlanetSizes } from '../constants';
 
 type TComponent = {
     planet: TPlanet;
@@ -7,19 +9,26 @@ type TComponent = {
 };
 
 const PlanetImage = ({ planet, activeButton }: TComponent) => {
+    //  TODO: fix the absolute image for all the planet sizes
+
+    const getPlanetSize = (): TPlanetSizes | undefined => {
+        return planetSizes.find((object) => object.planet === planet.planet);
+    };
+    const sizes: TPlanetSizes | undefined = getPlanetSize();
+
     return (
         <div className="relative my-[96px]">
             <img
                 src={planet.planetImagePath}
                 alt="planet"
-                className={`w-[111px] h-[111px] ${
+                className={`${sizes?.size} ${
                     activeButton !== 0 && activeButton !== 2 ? 'hidden' : ''
                 }`}
             />
             <img
                 src={planet.planetInternal}
                 alt="planet-interior"
-                className={`w-[111px] h-[111px] ${
+                className={`${sizes?.size} ${
                     activeButton !== 1 ? 'hidden' : ''
                 }`}
             />
