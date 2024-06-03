@@ -1,7 +1,6 @@
 import { planets, TPlanet } from '../constants';
 import { NavLink } from 'react-router-dom';
 
-// import ArrowIcon from '../assets/icon-chevron.svg';
 
 type TPlanetElement = {
     planet: string;

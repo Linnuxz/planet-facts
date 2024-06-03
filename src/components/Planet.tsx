@@ -4,7 +4,6 @@ import PlanetImage from './PlanetImage';
 import MainButtonComponent from './MainButtonComponent';
 import MainButtonComponentBelow from './MainButtonComponentBelow';
 
-// import SourceIcon from '../assets/icon-source.svg';
 import Statistics from './Statistics';
 
 type TPlanetElement = {
