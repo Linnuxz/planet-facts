@@ -1,4 +1,3 @@
-import Hamburger from '../assets/icon-hamburger.svg';
 import { NavLink } from 'react-router-dom';
 import PlanetList from './PlanetList';
 
@@ -18,14 +17,14 @@ const Navbar = ({ onIsOpen, isOpen }: TNavbar) => {
                 </NavLink>
                 <button onClick={onIsOpen} className="md:hidden">
                     <img
-                        src={Hamburger}
+                        src={'assets/icon-hamburger.svg'}
                         className={`${
                             isOpen ? 'opacity-[0.2487]' : 'opacity-1'
                         }`}
                     />
                 </button>
             </div>
-            <div className='hidden md:block'>
+            <div className="hidden md:block">
                 <PlanetList />
             </div>
         </div>

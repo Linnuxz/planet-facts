@@ -1,7 +1,7 @@
 import { planets, TPlanet } from '../constants';
 import { NavLink } from 'react-router-dom';
 
-import ArrowIcon from '../assets/icon-chevron.svg';
+// import ArrowIcon from '../assets/icon-chevron.svg';
 
 type TPlanetElement = {
     planet: string;
@@ -43,7 +43,7 @@ const PlanetListElement = ({
                     {planetObj.planet}
                 </h2>
             </div>
-            <img src={ArrowIcon} alt="icon" className="md:hidden" />
+            <img src={'./assets/icon-chevron.svg'} alt="icon" className="md:hidden" />
         </NavLink>
     );
 };

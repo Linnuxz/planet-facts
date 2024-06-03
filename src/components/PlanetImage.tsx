@@ -9,6 +9,7 @@ type TComponent = {
 };
 
 const PlanetImage = ({ planet, activeButton }: TComponent) => {
+    //  TODO: fix the invisible images on vercel
     //  TODO: fix the absolute image for all the planet sizes
 
     const getPlanetSize = (): TPlanetSizes | undefined => {

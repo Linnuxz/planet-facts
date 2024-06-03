@@ -4,7 +4,7 @@ import PlanetImage from './PlanetImage';
 import MainButtonComponent from './MainButtonComponent';
 import MainButtonComponentBelow from './MainButtonComponentBelow';
 
-import SourceIcon from '../assets/icon-source.svg';
+// import SourceIcon from '../assets/icon-source.svg';
 import Statistics from './Statistics';
 
 type TPlanetElement = {
@@ -53,7 +53,7 @@ const Planet = ({ planet, isOpen }: TPlanetElement) => {
                                         </a>
                                     </p>
                                     <img
-                                        src={SourceIcon}
+                                        src={'./assets/icon-source.svg'}
                                         alt="source"
                                         className="w-[12px] h-[12px]"
                                     />
